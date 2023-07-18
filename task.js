@@ -2,6 +2,7 @@ const express = require("express");
 const Fs = require("fs");
 const path = require("path");
 const dirPath = path.join(__dirname, "timeStamp");
+// create the folder timeStamp
 
 const app = express();
 //app.use(express.json())
@@ -18,3 +19,6 @@ app.get("/timestamp", (req, res) => {
   });
   res.sendFile(path.join(dirPath, "current-date-time.txt"));
 });
+
+//create the folder timeStamp in new automatically
+print the current date and time
